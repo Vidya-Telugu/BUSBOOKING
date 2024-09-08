@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <style>
+        .btn {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Bus Booking</h1>
+        <form action="" id="form">
+            <label>Name:</label>
+            <input type="text" id="username" placeholder="username"><br><br>
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="email"><br><br>
+            <label>Phone Number:</label>
+            <input type="number" id="phonenumber" placeholder="Type Number"><br><br>
+            <label>Bus Number:</label>
+            <select name="buses" id="buses">
+                <option value="bus1">Bus1</option>
+                <option value="bus2">Bus2</option>
+                <option value="bus3">Bus3</option>
+            </select><br><br>
+            <button type="submit" id="btn">Book</button><br><br>
+            <label>Filter:</label>
+            <select name="filters" id="filters">
+                <option value="all">All</option>
+                <option value="bus1">Bus1</option>
+                <option value="bus2">Bus2</option>
+                <option value="bus3">Bus3</option>
+            </select><br><br>
+        </form>
+        <table id="booking-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Bus Number</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Booking rows will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
